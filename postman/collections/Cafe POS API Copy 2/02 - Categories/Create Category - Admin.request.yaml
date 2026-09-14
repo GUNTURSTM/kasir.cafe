@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{base_url}}/api/categories"
+method: POST
+headers:
+  Authorization: Bearer {{admin_token}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "name": "Minuman"
+    }
+order: 3000

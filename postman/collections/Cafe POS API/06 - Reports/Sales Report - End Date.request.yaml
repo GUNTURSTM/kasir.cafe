@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{base_url}}/api/reports/sales?end_date=2026-09-08"
+method: GET
+headers:
+  Authorization: Bearer {{admin_token}}
+queryParams:
+  end_date: 2026-09-08
+order: 4000

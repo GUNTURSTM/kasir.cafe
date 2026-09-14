@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{base_url}}/api/menus"
+method: GET
+headers:
+  Authorization: Bearer abc123
+order: 2000

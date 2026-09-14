@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{base_url}}/api/menus/{{menu_id}}"
+method: PUT
+headers:
+  Authorization: Bearer {{admin_token}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "category_id": 1,
+        "name": "Es Teh Manis",
+        "price": 6000,
+        "status": "available",
+        "description": "Es teh manis dingin",
+        "image": null
+    }
+order: 4000

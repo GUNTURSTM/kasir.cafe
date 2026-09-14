@@ -1,0 +1,17 @@
+# Use this workspace to collaborate
+workspace:
+  id: 4a6f4ffe-2e6f-48a6-9895-c84e83d07586
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+
+cloudResources:
+  collections:
+    ../postman/collections/Cafe POS API Copy: c44b2ba1-d7c8-4aeb-88c8-1fd85cd806e1
+    ../postman/collections/Cafe POS API Copy 2: 182058ea-21c1-4862-8f8b-77fde6bc9b4d
+    ../postman/collections/Cafe POS API: bf7dc4bb-0a9b-4b58-ac91-5f89f7045416
+
+# All resources in the `postman/` folder are automatically registered in Local View.
+# Point to additional files outside the `postman/` folder to register them individually. Example:
+#localResources:
+#  collections:
+#    - ../tests/E2E Test Collection/

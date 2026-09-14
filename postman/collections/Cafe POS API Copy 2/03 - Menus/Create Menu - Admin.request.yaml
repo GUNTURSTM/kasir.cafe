@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{base_url}}/api/menus"
+method: POST
+headers:
+  Authorization: Bearer {{admin_token}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "category_id": 1,
+        "name": "Es Teh",
+        "price": 5000,
+        "status": "available",
+        "description": "Es teh manis",
+        "image": null
+    }
+order: 3000

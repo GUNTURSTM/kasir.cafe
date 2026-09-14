@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{base_url}}/api/transactions/{{transaction_id}}/receipt"
+method: GET
+headers:
+  Authorization: Bearer {{cashier_token}}
+order: 4000

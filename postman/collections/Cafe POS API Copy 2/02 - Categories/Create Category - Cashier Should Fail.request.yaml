@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{base_url}}/api/categories"
+method: POST
+headers:
+  Authorization: Bearer {{cashier_token}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "name": "Test Cashier"
+    }
+order: 6000
