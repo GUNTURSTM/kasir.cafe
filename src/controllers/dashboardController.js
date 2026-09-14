@@ -28,10 +28,13 @@ const getDashboard = async (req, res) => {
             AND DATE(created_at) = CURDATE()
         `);
 
-        const [bestMenu] = await pool.query(`
+        // Top 5 menu terlaris
+        const bestMenus = await pool.query(`
             SELECT
+                menus.id,
                 menus.name,
-                SUM(transaction_details.quantity) AS total_quantity
+                SUM(transaction_details.quantity) AS total_quantity,
+                SUM(transaction_details.subtotal) AS total_revenue
             FROM transaction_details
             JOIN menus
                 ON transaction_details.menu_id = menus.id
@@ -48,7 +51,7 @@ const getDashboard = async (req, res) => {
             total_revenue: Number(totalRevenue.total),
             today_transactions: Number(todayTransactions.total),
             today_revenue: Number(todayRevenue.total),
-            best_menus: bestMenu
+            best_menus: bestMenus
         });
 
     } catch (error) {
