@@ -8,6 +8,6 @@ body:
   content: |-
     {
         "username": "admin",
-        "password": "admin123"
+        "password": "<ADMIN_PASSWORD>"
     }
 order: 1000
